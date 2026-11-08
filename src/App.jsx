@@ -54,22 +54,27 @@ const skills = {
 };
 
 
+
 const projects = [
   {
-    title: "Netflix Clone",
-    type: "Streaming Platform | Frontend Web Application",
+    title: "SkillMatrix",
+    type: "Full Stack Web Application | Employee & Project Management",
     description:
-      "A Netflix-inspired streaming platform that recreates the look and feel of a modern entertainment website. Features a dark-themed interface, responsive layouts, movie and TV-show browsing sections, and an engaging user experience across devices.",
+      "A full-stack employee and project management platform developed for managing employee profiles, skills, education, work experience, and project assignments. Includes separate administrator and employee panels, authentication, profile completion tracking, employee management, project allocation, and a responsive dashboard. Built with React, Node.js, Express, and MongoDB.",
     tech: [
       "React",
       "JavaScript",
-      "HTML5",
-      "CSS3",
-      "Vite",
-      "Responsive Design",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "JWT Authentication",
+      "REST APIs",
+      "Vercel",
     ],
-    github: "https://github.com/Risha188/NetflixClone",
-    live: "https://netflix-clone-risha188.vercel.app/",
+    github: "https://github.com/Risha188/Skill_Matrix",
+    live: "https://skill-matrix-frontend-parna-das-projects-8f9a10f4.vercel.app/",
   },
   {
     title: "Collector's Hub",
@@ -90,6 +95,7 @@ const projects = [
     live: "https://yuktitech.vercel.app/",
   },
 ];
+
 
 
 const navItems = [
