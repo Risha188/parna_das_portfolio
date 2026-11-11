@@ -150,9 +150,8 @@ function App() {
               <a
                 key={id}
                 href={`#${id}`}
-                className={`text-sm transition ${
-                  active === id ? "text-blue-400" : "text-gray-400 hover:text-white"
-                }`}
+                className={`text-sm transition ${active === id ? "text-blue-400" : "text-gray-400 hover:text-white"
+                  }`}
               >
                 {label}
               </a>
@@ -180,9 +179,8 @@ function App() {
                   key={id}
                   href={`#${id}`}
                   onClick={closeMenu}
-                  className={`rounded-lg px-3 py-3 text-sm ${
-                    active === id ? "bg-blue-500/10 text-blue-400" : "text-gray-300"
-                  }`}
+                  className={`rounded-lg px-3 py-3 text-sm ${active === id ? "bg-blue-500/10 text-blue-400" : "text-gray-300"
+                    }`}
                 >
                   {label}
                 </a>
@@ -320,11 +318,16 @@ function App() {
           </div>
         </section>
 
+
         <section id="experience" className="section border-t border-white/5">
           <p className="eyebrow">Experience</p>
-          <h2 className="text-3xl font-bold sm:text-4xl">My professional journey</h2>
+          <h2 className="text-3xl font-bold sm:text-4xl">
+            My professional journey
+          </h2>
 
-          <div className="mt-10 max-w-4xl">
+          <div className="mt-10 max-w-4xl space-y-6">
+
+            {/* Current Experience */}
             <div className="relative pl-8">
               <span className="absolute left-0 top-1 h-3 w-3 rounded-full bg-blue-500 ring-4 ring-blue-500/10" />
               <span className="absolute left-[5px] top-5 h-[calc(100%-10px)] w-px bg-white/10" />
@@ -332,19 +335,26 @@ function App() {
               <div className="glass rounded-2xl p-6 sm:p-8">
                 <div className="flex flex-col justify-between gap-3 sm:flex-row">
                   <div>
-                    <p className="text-sm font-medium text-blue-400">{profile.startDate} – Present</p>
-                    <h3 className="mt-1 text-xl font-bold text-white">{profile.role}</h3>
-                    <p className="mt-1 text-gray-400">{profile.company}</p>
+                    <p className="text-sm font-medium text-blue-400">
+                      September 2026 – Present
+                    </p>
+                    <h3 className="mt-1 text-xl font-bold text-white">
+                      Full Stack Developer
+                    </h3>
+                    <p className="mt-1 text-gray-400">
+                      OBS Digital Services
+                    </p>
                   </div>
                   <BriefcaseBusiness className="text-gray-600" size={24} />
                 </div>
 
                 <ul className="mt-6 space-y-3 text-sm leading-6 text-gray-400">
                   {[
-                    "Develop and maintain responsive web interfaces using modern frontend technologies.",
-                    "Work across frontend and backend workflows, including API integration and application logic.",
-                    "Collaborate with the development team using Git-based workflows.",
-                    "Continue improving code quality, debugging skills and full-stack development practices.",
+                    "Develop and maintain responsive frontend interfaces using React.js, JavaScript and modern UI technologies.",
+                    "Work on backend development, REST API integration and API documentation using Swagger.",
+                    "Use Docker for database containerization and Dokploy for application deployment and management.",
+                    "Manage environment variables and application secrets securely using Doppler.",
+                    "Use Figma for UI design reference and collaboration to build consistent user interfaces.",
                   ].map((item) => (
                     <li key={item} className="flex gap-3">
                       <CheckCircle2 className="mt-1 shrink-0 text-blue-400" size={16} />
@@ -354,8 +364,47 @@ function App() {
                 </ul>
               </div>
             </div>
+
+            {/* Previous Experience */}
+            <div className="relative pl-8">
+              <span className="absolute left-0 top-1 h-3 w-3 rounded-full bg-gray-500 ring-4 ring-gray-500/10" />
+
+              <div className="glass rounded-2xl p-6 sm:p-8">
+                <div className="flex flex-col justify-between gap-3 sm:flex-row">
+                  <div>
+                    <p className="text-sm font-medium text-blue-400">
+                      February 2026 – August 2026
+                    </p>
+                    <h3 className="mt-1 text-xl font-bold text-white">
+                      Trainee Software Engineer
+                    </h3>
+                    <p className="mt-1 text-gray-400">
+                      PCS Global Pvt. Ltd.
+                    </p>
+                  </div>
+                  <BriefcaseBusiness className="text-gray-600" size={24} />
+                </div>
+
+                <ul className="mt-6 space-y-3 text-sm leading-6 text-gray-400">
+                  {[
+                    "Worked on frontend development using React.js and modern JavaScript.",
+                    "Developed responsive and reusable UI components for web applications.",
+                    "Integrated REST APIs and worked with backend data to support application functionality.",
+                    "Collaborated with team members using Git and GitHub development workflows.",
+                    "Improved debugging, problem-solving and practical software development skills.",
+                  ].map((item) => (
+                    <li key={item} className="flex gap-3">
+                      <CheckCircle2 className="mt-1 shrink-0 text-blue-400" size={16} />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
           </div>
         </section>
+
 
         <section id="skills" className="section border-t border-white/5">
           <p className="eyebrow">Skills</p>
